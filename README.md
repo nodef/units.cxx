@@ -2,16 +2,50 @@
 # UNITS
 A compile-time, header-only, dimensional analysis library built on c++14 with no dependencies.
 
-[![Linux build](https://travis-ci.org/nholthaus/units.svg?branch=master)](https://travis-ci.org/nholthaus/units) [![Windows build](https://ci.appveyor.com/api/projects/status/github/nholthaus/units?svg=true&branch=master)](https://ci.appveyor.com/project/nholthaus/units) [![Coverage Status](https://coveralls.io/repos/github/nholthaus/units/badge.svg?branch=master)](https://coveralls.io/github/nholthaus/units?branch=master) ![license](https://img.shields.io/badge/license-MIT-orange.svg) ![copyright](https://img.shields.io/badge/%C2%A9-Nic_Holthaus-orange.svg) ![language](https://img.shields.io/badge/language-c++-blue.svg) ![c++](https://img.shields.io/badge/std-c++14-blue.svg)<br>![msvc2015](https://img.shields.io/badge/MSVC-2015-ff69b4.svg) ![msvc2017](https://img.shields.io/badge/MSVC-2017-ff69b4.svg) ![gcc-4.9.3](https://img.shields.io/badge/GCC-4.9.3-ff69b4.svg) ![gcc-5.4.0](https://img.shields.io/badge/GCC-5.4.0-ff69b4.svg) ![clang-3.4](https://img.shields.io/badge/CLANG-3.4-ff69b4.svg)
+[![Linux build](https://travis-ci.org/nholthaus/units.svg?branch=master)](https://travis-ci.org/nholthaus/units) [![Coverage Status](https://coveralls.io/repos/github/nholthaus/units/badge.svg?branch=master)](https://coveralls.io/github/nholthaus/units?branch=master) ![license](https://img.shields.io/badge/license-MIT-orange.svg) ![copyright](https://img.shields.io/badge/%C2%A9-Nic_Holthaus-orange.svg) ![language](https://img.shields.io/badge/language-c++-blue.svg) ![c++](https://img.shields.io/badge/std-c++14-blue.svg)<br>![msvc2015](https://img.shields.io/badge/MSVC-2015-ff69b4.svg) ![msvc2017](https://img.shields.io/badge/MSVC-2017-ff69b4.svg) ![gcc-4.9.3](https://img.shields.io/badge/GCC-4.9.3-ff69b4.svg) ![gcc-5.4.0](https://img.shields.io/badge/GCC-5.4.0-ff69b4.svg) ![clang-3.4](https://img.shields.io/badge/CLANG-3.4-ff69b4.svg)
+
+<!-- [![Windows build](https://ci.appveyor.com/api/projects/status/github/nholthaus/units?svg=true&branch=master)](https://ci.appveyor.com/project/nholthaus/units) -->
+
+
+# Installation
+
+Run:
+
+```bash
+$ npm i units.cxx
+```
+
+And then include `units.h` as follows:
+
+```cxx
+// main.cxx
+#include <units.h>
+
+int main() { /* ... */ }
+```
+
+Finally, compile while adding the path `node_modules/units.cxx` to your compiler's include paths.
+
+```bash
+$ clang++ -I./node_modules/units.cxx main.cxx  # or, use g++
+$ g++     -I./node_modules/units.cxx main.cxx
+```
+
+You may also use a simpler approach with the [cpoach](https://www.npmjs.com/package/cpoach.sh) tool, which automatically adds the necessary include paths of all the installed dependencies for your project.
+
+```bash
+$ cpoach clang++ main.cxx  # or, use g++
+$ cpoach g++     main.cxx
+```
 
 # Get in touch
 
 If you are using `units.h` in production code, I'd love to hear from you via GitHub issues!
 
-# Latest Release - v2.3.4
+<!-- # Latest Release - v2.3.4 -->
 
-## Get it
-[![DOWNLOAD](https://img.shields.io/badge/Download-v2.3.4-green.svg)](https://github.com/nholthaus/units/releases/tag/v2.3.4)
+<!-- ## Get it -->
+<!-- [![DOWNLOAD](https://img.shields.io/badge/Download-v2.3.4-green.svg)](https://github.com/nholthaus/units/releases/tag/v2.3.4) -->
 
 ## New in v2.3.4
 
@@ -831,3 +865,12 @@ To build the tests:
    - Adds Doxygen and additional type traits.
  - [`v1.0.0`](https://github.com/nholthaus/units/releases/tag/v1.0.0)
    - Initial release.
+
+<br>
+<br>
+
+
+[![](https://raw.githubusercontent.com/qb40/designs/gh-pages/0/image/11.png)](https://wolfram77.github.io)<br>
+[![SRC](https://img.shields.io/badge/src-repo-green?logo=Org)](https://github.com/nholthaus/units)
+[![ORG](https://img.shields.io/badge/org-nodef-green?logo=Org)](https://nodef.github.io)
+![](https://ga-beacon.deno.dev/G-RC63DPBH3P:SH3Eq-NoQ9mwgYeHWxu7cw/github.com/nodef/units.cxx)
