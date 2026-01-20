@@ -16,10 +16,8 @@ fi
 
 # Test the project
 test() {
-echo "Running 01-simple ..."
-clang++ -std=c++20 -I. -o 01.exe examples/01-simple.cxx   && ./01.exe && echo -e "\n"
-echo "Running 02-pipeline ..."
-clang++ -std=c++20 -I. -o 02.exe examples/02-pipeline.cxx && ./02.exe && echo -e "\n"
+echo "Running 01-example ..."
+clang++ -I. -o 01.exe examples/01-example.cxx && ./01.exe && echo -e "\n"
 }
 
 
