@@ -1,37 +1,16 @@
 #!/usr/bin/env bash
 # Fetch the latest version of the library
 fetch() {
-if [ -d "taskflow" ]; then return; fi
-URL="https://github.com/taskflow/taskflow/archive/refs/heads/master.zip"
-ZIP="${URL##*/}"
-DIR="taskflow-master"
-mkdir -p .build
-cd .build
+if [ -f "units.h" ]; then return; fi
+URL="https://github.com/nholthaus/units/raw/refs/heads/master/include/units.h"
+FILE="units.h"
 
 # Download the release
-if [ ! -f "$ZIP" ]; then
-  echo "Downloading $ZIP from $URL ..."
-  curl -L "$URL" -o "$ZIP"
+if [ ! -f "$FILE" ]; then
+  echo "Downloading $FILE from $URL ..."
+  curl -L "$URL" -o "$FILE"
   echo ""
 fi
-
-# Unzip the release
-if [ ! -d "$DIR" ]; then
-  echo "Unzipping $ZIP to .build/$DIR ..."
-  cp "$ZIP" "$ZIP.bak"
-  unzip -q "$ZIP"
-  rm "$ZIP"
-  mv "$ZIP.bak" "$ZIP"
-  echo ""
-fi
-cd ..
-
-# Copy the libs to the package directory
-echo "Copying libs to taskflow/ ..."
-rm -rf taskflow
-mkdir -p taskflow
-cp -rf ".build/$DIR/taskflow/"* taskflow/
-echo ""
 }
 
 
