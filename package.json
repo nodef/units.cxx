@@ -1,28 +1,26 @@
 {
-  "name": "taskflow.cxx",
-  "version": "4.2026.5",
-  "description": "A General-purpose Task-parallel Programming System using Modern C++; Tsung-Wei Huang (2018).",
+  "name": "units.cxx",
+  "version": "3.2026.1",
+  "description": "A compile-time, header-only, dimensional analysis and unit conversion library built on C++14 with no dependencies; Nic Holthaus (2016).",
   "keywords": [
     "c++",
     "library",
-    "taskflow",
-    "parallel",
-    "concurrency",
-    "multithreading",
-    "task graph",
-    "thread pool"
+    "units",
+    "dimensional-analysis",
+    "unit-conversion",
+    "header-only"
   ],
-  "homepage": "https://github.com/nodef/taskflow.cxx#readme",
+  "homepage": "https://github.com/nodef/units.cxx#readme",
   "bugs": {
-    "url": "https://github.com/nodef/taskflow.cxx/issues"
+    "url": "https://github.com/nodef/units.cxx/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nodef/taskflow.cxx.git"
+    "url": "git+https://github.com/nodef/units.cxx.git"
   },
   "license": "MIT",
   "author": "wolfram77@gmail.com",
-  "main": "taskflow.hpp",
+  "main": "units.h",
   "scripts": {
     "test": "bash build.sh test"
   }
